@@ -13,8 +13,8 @@ namespace CalculadoraForms
     public partial class Form1 : Form
     {
         int numero1;
-        string ultimoOperador;
-        bool jaApertado = false;
+        string ultimoOperador = "";
+        bool jaApertado;
 
         public Form1()
         {
@@ -23,6 +23,7 @@ namespace CalculadoraForms
 
         private void btnClear_Click(object sender, EventArgs e) //Método para limpar a tela
         {
+            txbAux.Clear();
             txbTela.Clear();
         }
         private void Numero_Click(object sender, EventArgs e) //Método para números
@@ -35,74 +36,103 @@ namespace CalculadoraForms
         {
             var botao = (Button)sender;
 
-            if (txbTela.Text == "" && botao.Text == "-") //Condição para começar com valor negativo
-            {
-                jaApertado = true;
-
-                txbTela.Text = botao.Text;
-            }
+            jaApertado = false; //Iniciando a var de verif. como false
 
             if (txbTela.Text == "" && botao.Text != "-") //Condição se botão de operações acionado sem valor
             { 
-                jaApertado = true;
-
+                jaApertado = true; //Botão apertado valor passa a ser true
                 MessageBox.Show("Insira um valor antes de acionar as operações!");
-
-                txbTela.Text = "";
+                btnClear.PerformClick(); //Método de clear
             }
 
-            if(jaApertado == false)
+            if (jaApertado == false) //Só vai executar se não estiver apertado
+            {
+                if (txbTela.Text == "" && botao.Text == "-")
+                { //Condição para começar com valor negativo
+                    txbTela.Text = botao.Text;
+                    jaApertado = true;
+                }
+                else if (jaApertado && txbTela.Text == "-" || botao.Text == "-")
+                { //Condição: caso o botão "-" seja pressionado duas vezes
+                    MessageBox.Show("Erro!"); //Mensagem de erro
+                    btnClear.PerformClick();
+                    jaApertado = true;
+                }
+            }
+
+            if (jaApertado == false) //Se nenhum botão de operação foi acionada previamente
             {
                 txbAux.Visible = botao.Visible; //Tela auxiliar de operação aparece
 
                 numero1 = int.Parse(txbTela.Text); //Armazenando o número em uma var
-
                 txbTela.Clear(); //Limpando a tela principal
 
                 txbAux.Text = numero1.ToString() + botao.Text; //Deslocando o número armazenado
-                                                           //e o opeardor para a tela auxiliar
+                                                               //e o operador para a tela auxiliar
                 ultimoOperador = botao.Text; //Armazenando o último operador
+
+                jaApertado = true;
+
+
+            }
+
+            if (jaApertado == false)
+            {
+                btnIgual.PerformClick();
+                jaApertado = false;
             }
 
         }
         private void btnIgual_Click(object sender, EventArgs e) //Método para o operador: Igual (=)
         {
-            switch (ultimoOperador) //Selecionando o último operador clicado
+            if(ultimoOperador == "") //Condição: botão clicado sem operação selecionada
             {
-                case "+": //Caso operador: Adição(+)
-                    txbAux.Visible = false; //Tela auxiliar é ocultada
-                    txbAux.Clear();
-                    txbTela.Text = (numero1 + int.Parse(txbTela.Text)).ToString();
-                    break;
+                MessageBox.Show("Escolha uma operação matemática");
+            }
 
-                case "-": //Caso operador: Subtração(-)
-                    txbAux.Visible = false;
-                    txbAux.Clear();
-                    txbTela.Text = (numero1 - int.Parse(txbTela.Text)).ToString();
-                    break;
+            if (jaApertado == false) //Condição: apenas será executado se o botão de operações
+            {                        //Não for a última coisa a ser inserida
+                switch (ultimoOperador) //Selecionando o último operador clicado
+                {
+                    case "+": //Caso operador: Adição(+)
+                        txbAux.Visible = false; //Tela auxiliar é ocultada
+                        txbAux.Clear();
+                        txbTela.Text = (numero1+ int.Parse(txbTela.Text)).ToString();
+                        break;
 
-                case "x": //Caso operador: Multiplicação(x)
-                    txbAux.Visible = false;
-                    txbAux.Clear();
-                    txbTela.Text = (numero1 * Double.Parse(txbTela.Text)).ToString();
-                    break;
-
-                case "÷": //Caso operador: Divisão(÷)
-                    if (numero1 == 0 || int.Parse(txbTela.Text) == 0) //Condição: var numero1 = 0 
-                    {                                                    //Ou número na tela = 0
-                        MessageBox.Show("Erro! Divisão por zero");
-                        txbAux.Visible = false;
-                    }
-                    else //Resultado da divisão
-                    {
+                    case "-": //Caso operador: Subtração(-)
                         txbAux.Visible = false;
                         txbAux.Clear();
-                        txbTela.Text = (numero1 / Double.Parse(txbTela.Text)).ToString();
-                    }
-                    break;
+                        txbTela.Text = (numero1 - int.Parse(txbTela.Text)).ToString();
+                        break;
 
+                    case "x": //Caso operador: Multiplicação(x)
+                        txbAux.Visible = false;
+                        txbAux.Clear();
+                        txbTela.Text = (numero1 * Double.Parse(txbTela.Text)).ToString();
+                        break;
 
+                    case "÷": //Caso operador: Divisão(÷)
+                        if (numero1 == 0 || int.Parse(txbTela.Text) == 0) //Condição: var numero1 = 0 
+                        {                                                    //Ou número na tela = 0
+                            MessageBox.Show("Erro! Divisão por zero");
+                            txbAux.Visible = false;
+                        }
+                        else //Resultado da divisão
+                        {
+                            txbAux.Visible = false;
+                            txbAux.Clear();
+                            txbTela.Text = (numero1 / Double.Parse(txbTela.Text)).ToString();
+                        }
+                        break;
+                }
             }
+            else
+            {
+                MessageBox.Show("Erro");
+                btnClear.PerformClick();
+            }
+
         }
     }
 }
