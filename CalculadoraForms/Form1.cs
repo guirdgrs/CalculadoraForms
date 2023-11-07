@@ -76,22 +76,30 @@ namespace CalculadoraForms
                     ultimoOperador = botao.Text; //Armazenando o último operador
                     pressionado = true;
                 }
+            {
+                btnIgual.PerformClick();
+            {
+                btnIgual.PerformClick();
             }
 
         }
         private void btnIgual_Click(object sender, EventArgs e) //Método para o operador: Igual (=)
         {
-            if (ultimoOperador == "" && txbTela.Text == "")
-            { //Condição: botão clicado sem operação selecionada
-                MessageBox.Show("Escolha uma operação matemática");
-            }
-            else if (pressionado && txbTela.Text == "")
-            { //Impedir execução se botão de operação for acionado e a tela estiver vazia
-                MessageBox.Show("Erro");
+
+            if (verErro && txbTela.Text == "" || txbAux.Text == "")
+            { //Impedir execução com último valor sendo um operador
+                MessageBox.Show("Erro!");
                 btnClear.PerformClick();
             }
+                MessageBox.Show("Erro!");
+                apertouOperador = false;
+                btnClear.PerformClick();
+                MessageBox.Show("Erro!");
+                btnClear.PerformClick();
+                apertouOperador = false;
             else
             {
+                apertouOperador = false;
                 switch (ultimoOperador)
                 { //Selecionando o último operador clicado
 
