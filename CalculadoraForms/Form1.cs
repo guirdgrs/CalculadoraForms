@@ -14,7 +14,7 @@ namespace CalculadoraForms
     {
         int numero1;
         string ultimoOperador = "";
-        bool verErro = true,apertouOperador = false;
+        bool pressionado = false;
 
         public Form1()
         {
@@ -31,7 +31,7 @@ namespace CalculadoraForms
             var botao = (Button)sender;
 
             txbTela.Text += botao.Text; //Armazenando o botão que foi clicado
-            apertouOperador = false;
+            pressionado = false;
         }
         private void Operador_Click(object sender, EventArgs e) //Método para Operador
         {
@@ -41,37 +41,29 @@ namespace CalculadoraForms
             { //Condição se botão de operações acionado sem valor
                 MessageBox.Show("Insira um valor antes de acionar as operações!");
                 btnClear.PerformClick(); //Método de clear
-                verErro = false; //Botão "desativa"
             }
             else if (txbTela.Text == "" && botao.Text == "-")
             { //Condição para começar com valor negativo
-                ultimoOperador = "-";
                 txbTela.Text = botao.Text; //Colocando o "-" na tela
-                verErro = false;
-                apertouOperador = false;
             }
-            else if (verErro && txbTela.Text == "-" && botao.Text != null)
+            else if (txbTela.Text == "-" && botao.Text != null)
             { //Condição: caso o botão de operação seja acionado seguidamente sem valores
-                MessageBox.Show("Erro!"); //Mensagem de erro
+                MessageBox.Show("Erro!");
                 btnClear.PerformClick();
-                verErro = false;
             }
-
-            if (verErro == true)
-            { //Só irá excecutar se nenhum erro tiver sido executado
+            else
+            { 
                 txbAux.Visible = botao.Visible; //Tela auxiliar de operação aparece
 
                 numero1 = int.Parse(txbTela.Text); //Armazenando o número em uma var
                 txbTela.Clear(); //Limpando a tela principal
 
-                txbAux.Text = numero1.ToString() + botao.Text; //Deslocando o número armazenado
-                                                               //e o operador para a tela auxiliar
+                txbAux.Text = numero1.ToString() + botao.Text; //Movendo o número armazenado e operador
+                                                               
                 ultimoOperador = botao.Text; //Armazenando o último operador
-
-                apertouOperador = true;
             }
 
-            if (apertouOperador && txbTela.Text != "" && txbAux.Text != "")
+            if (pressionado)
             {
                 btnIgual.PerformClick();
             }
@@ -83,15 +75,9 @@ namespace CalculadoraForms
             { //Condição: botão clicado sem operação selecionada
                 MessageBox.Show("Escolha uma operação matemática");
             }
-
-            if (verErro && txbTela.Text == "" || txbAux.Text == "")
-            { //Impedir execução com último valor sendo um operador
-                MessageBox.Show("Erro!");
-                btnClear.PerformClick();
-            }
             else
             {
-                apertouOperador = false;
+                pressionado = false;
                 switch (ultimoOperador)
                 { //Selecionando o último operador clicado
 
