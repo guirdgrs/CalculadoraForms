@@ -50,7 +50,7 @@
             // 
             // btn9
             // 
-            this.btn9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9.Location = new System.Drawing.Point(130, 174);
             this.btn9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn9.Name = "btn9";
@@ -62,7 +62,7 @@
             // 
             // btn8
             // 
-            this.btn8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8.Location = new System.Drawing.Point(79, 174);
             this.btn8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn8.Name = "btn8";
@@ -74,7 +74,7 @@
             // 
             // btn7
             // 
-            this.btn7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7.Location = new System.Drawing.Point(28, 174);
             this.btn7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn7.Name = "btn7";
@@ -86,7 +86,7 @@
             // 
             // btn4
             // 
-            this.btn4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.Location = new System.Drawing.Point(28, 128);
             this.btn4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn4.Name = "btn4";
@@ -98,7 +98,7 @@
             // 
             // btn5
             // 
-            this.btn5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.Location = new System.Drawing.Point(79, 128);
             this.btn5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn5.Name = "btn5";
@@ -110,7 +110,7 @@
             // 
             // btn6
             // 
-            this.btn6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.Location = new System.Drawing.Point(130, 128);
             this.btn6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn6.Name = "btn6";
@@ -122,7 +122,7 @@
             // 
             // btn1
             // 
-            this.btn1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.Location = new System.Drawing.Point(28, 82);
             this.btn1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn1.Name = "btn1";
@@ -134,7 +134,7 @@
             // 
             // btn2
             // 
-            this.btn2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.Location = new System.Drawing.Point(79, 82);
             this.btn2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn2.Name = "btn2";
@@ -146,7 +146,7 @@
             // 
             // btn3
             // 
-            this.btn3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.Location = new System.Drawing.Point(130, 82);
             this.btn3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn3.Name = "btn3";
@@ -158,7 +158,7 @@
             // 
             // btn0
             // 
-            this.btn0.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn0.Location = new System.Drawing.Point(28, 220);
             this.btn0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn0.Name = "btn0";
@@ -170,7 +170,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.Location = new System.Drawing.Point(130, 220);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnClear.Name = "btnClear";
@@ -182,7 +182,7 @@
             // 
             // btnIgual
             // 
-            this.btnIgual.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIgual.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIgual.Location = new System.Drawing.Point(181, 220);
             this.btnIgual.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnIgual.Name = "btnIgual";
@@ -194,7 +194,7 @@
             // 
             // btnMais
             // 
-            this.btnMais.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMais.Location = new System.Drawing.Point(181, 176);
             this.btnMais.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnMais.Name = "btnMais";
@@ -206,7 +206,7 @@
             // 
             // btnMenos
             // 
-            this.btnMenos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenos.Location = new System.Drawing.Point(181, 130);
             this.btnMenos.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnMenos.Name = "btnMenos";
@@ -218,7 +218,7 @@
             // 
             // btnMultiplicar
             // 
-            this.btnMultiplicar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMultiplicar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMultiplicar.Location = new System.Drawing.Point(181, 82);
             this.btnMultiplicar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnMultiplicar.Name = "btnMultiplicar";
@@ -230,7 +230,7 @@
             // 
             // btnDividir
             // 
-            this.btnDividir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDividir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDividir.Location = new System.Drawing.Point(181, 37);
             this.btnDividir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnDividir.Name = "btnDividir";
@@ -242,30 +242,29 @@
             // 
             // txbTela
             // 
-            this.txbTela.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbTela.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbTela.Location = new System.Drawing.Point(28, 37);
             this.txbTela.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbTela.Name = "txbTela";
             this.txbTela.ReadOnly = true;
-            this.txbTela.Size = new System.Drawing.Size(147, 37);
+            this.txbTela.Size = new System.Drawing.Size(147, 35);
             this.txbTela.TabIndex = 16;
             this.txbTela.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txbAux
             // 
-            this.txbAux.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbAux.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbAux.Location = new System.Drawing.Point(28, 8);
             this.txbAux.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbAux.Name = "txbAux";
             this.txbAux.ReadOnly = true;
-            this.txbAux.Size = new System.Drawing.Size(96, 23);
+            this.txbAux.Size = new System.Drawing.Size(96, 22);
             this.txbAux.TabIndex = 17;
             this.txbAux.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txbAux.Visible = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(253, 289);
             this.Controls.Add(this.txbAux);
@@ -286,7 +285,7 @@
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.btn8);
             this.Controls.Add(this.btn9);
-            this.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
